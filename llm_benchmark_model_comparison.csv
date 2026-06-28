@@ -1,0 +1,2521 @@
+﻿experiment_id,provider,model_name,run_id,temperature,top_p,seed,max_output_tokens,scenario_id,scenario_family,scenario_name,fault_description,prompt_text,expected_answers_json,expected_num_answers,expected_components,expected_trends,expected_keywords,expected_values,expected_line_numbers,range_mins,range_maxs,metric_schema_validity,metric_exact_value_match,metric_physical_validity,metric_executable_input_success,metric_simulation_success,latency_s,input_tokens,output_tokens,cost_usd,notes
+openai_S01_R1,openai,OPENAI_MODEL_TO_FILL,1,0,1,7778,1200,S01,air_starvation,Deterministic low-air extreme case,Insufficient air supply occurs during char combustion.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Insufficient air supply occurs during char combustion.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""bc_v_g(2)"",
+        ""trend"": ""decrease""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 2.5,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""This can happen when the inlet blower underperforms or the air inlet is partially blocked."",
+      ""effects"": ""Reduced air supply can alter combustion stability and may increase the risk of abnormal wall-temperature response.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""decrease""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 2.5, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""This can happen when the inlet blower underperforms or the air inlet is partially blocked."", ""effects"": ""Reduced air supply can alter combustion stability and may increase the risk of abnormal wall-temperature response.""}]}",1,inlet air velocity,decrease,bc_v_g(2),2.5,101,2.5,5.0,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+openai_S01_R2,openai,OPENAI_MODEL_TO_FILL,2,0,1,7779,1200,S01,air_starvation,Deterministic low-air extreme case,Insufficient air supply occurs during char combustion.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Insufficient air supply occurs during char combustion.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""decrease""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 2.5,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""This can happen when the inlet blower underperforms or the air inlet is partially blocked."",
+      ""effects"": ""Reduced air supply can alter combustion stability and may increase the risk of abnormal wall-temperature response.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""decrease""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 2.5, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""This can happen when the inlet blower underperforms or the air inlet is partially blocked."", ""effects"": ""Reduced air supply can alter combustion stability and may increase the risk of abnormal wall-temperature response.""}]}",1,inlet air velocity,decrease,bc_v_g(2),2.5,101,2.5,5.0,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+openai_S01_R3,openai,OPENAI_MODEL_TO_FILL,3,0,1,7780,1200,S01,air_starvation,Deterministic low-air extreme case,Insufficient air supply occurs during char combustion.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Insufficient air supply occurs during char combustion.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""decrease""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 2.5,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""This can happen when the inlet blower underperforms or the air inlet is partially blocked."",
+      ""effects"": ""Reduced air supply can alter combustion stability and may increase the risk of abnormal wall-temperature response.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""decrease""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 2.5, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""This can happen when the inlet blower underperforms or the air inlet is partially blocked."", ""effects"": ""Reduced air supply can alter combustion stability and may increase the risk of abnormal wall-temperature response.""}]}",1,inlet air velocity,decrease,bc_v_g(2),2.5,101,2.5,5.0,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+openai_S02_R1,openai,OPENAI_MODEL_TO_FILL,1,0,1,7778,1200,S02,excessive_air,Deterministic high-air extreme case,Excessive air is injected into the combustor.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Excessive air is injected into the combustor.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""increase""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 5.0,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""This can happen when the inlet blower overshoots or an abnormal control command increases gas supply."",
+      ""effects"": ""Excessive air supply can change bed fluidization, combustion intensity, and the wall-temperature response.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""increase""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 5.0, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""This can happen when the inlet blower overshoots or an abnormal control command increases gas supply."", ""effects"": ""Excessive air supply can change bed fluidization, combustion intensity, and the wall-temperature response.""}]}",1,inlet air velocity,increase,bc_v_g(2),5.0,101,2.5,5.0,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+openai_S02_R2,openai,OPENAI_MODEL_TO_FILL,2,0,1,7779,1200,S02,excessive_air,Deterministic high-air extreme case,Excessive air is injected into the combustor.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Excessive air is injected into the combustor.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""increase""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 5.0,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""This can happen when the inlet blower overshoots or an abnormal control command increases gas supply."",
+      ""effects"": ""Excessive air supply can change bed fluidization, combustion intensity, and the wall-temperature response.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""increase""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 5.0, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""This can happen when the inlet blower overshoots or an abnormal control command increases gas supply."", ""effects"": ""Excessive air supply can change bed fluidization, combustion intensity, and the wall-temperature response.""}]}",1,inlet air velocity,increase,bc_v_g(2),5.0,101,2.5,5.0,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+openai_S02_R3,openai,OPENAI_MODEL_TO_FILL,3,0,1,7780,1200,S02,excessive_air,Deterministic high-air extreme case,Excessive air is injected into the combustor.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Excessive air is injected into the combustor.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""increase""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 5.0,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""This can happen when the inlet blower overshoots or an abnormal control command increases gas supply."",
+      ""effects"": ""Excessive air supply can change bed fluidization, combustion intensity, and the wall-temperature response.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""increase""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 5.0, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""This can happen when the inlet blower overshoots or an abnormal control command increases gas supply."", ""effects"": ""Excessive air supply can change bed fluidization, combustion intensity, and the wall-temperature response.""}]}",1,inlet air velocity,increase,bc_v_g(2),5.0,101,2.5,5.0,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+openai_S03_R1,openai,OPENAI_MODEL_TO_FILL,1,0,1,7778,1200,S03,fine_char,Deterministic fine-char extreme case,Injected char particles become abnormally smaller than the nominal particle diameter.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Injected char particles become abnormally smaller than the nominal particle diameter.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""decrease""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.0005,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""This can happen when particle attrition or feed-preparation error produces fine char particles."",
+      ""effects"": ""Smaller char particles can increase available surface area and affect reaction rate, heat release, and wall-temperature response.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""char particle diameter"", ""trend"": ""decrease""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.0005, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""This can happen when particle attrition or feed-preparation error produces fine char particles."", ""effects"": ""Smaller char particles can increase available surface area and affect reaction rate, heat release, and wall-temperature response.""}]}",1,char particle diameter,decrease,d_p0(1),0.0005,202,0.0005,0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+openai_S03_R2,openai,OPENAI_MODEL_TO_FILL,2,0,1,7779,1200,S03,fine_char,Deterministic fine-char extreme case,Injected char particles become abnormally smaller than the nominal particle diameter.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Injected char particles become abnormally smaller than the nominal particle diameter.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""decrease""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.0005,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""This can happen when particle attrition or feed-preparation error produces fine char particles."",
+      ""effects"": ""Smaller char particles can increase available surface area and affect reaction rate, heat release, and wall-temperature response.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""char particle diameter"", ""trend"": ""decrease""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.0005, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""This can happen when particle attrition or feed-preparation error produces fine char particles."", ""effects"": ""Smaller char particles can increase available surface area and affect reaction rate, heat release, and wall-temperature response.""}]}",1,char particle diameter,decrease,d_p0(1),0.0005,202,0.0005,0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+openai_S03_R3,openai,OPENAI_MODEL_TO_FILL,3,0,1,7780,1200,S03,fine_char,Deterministic fine-char extreme case,Injected char particles become abnormally smaller than the nominal particle diameter.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Injected char particles become abnormally smaller than the nominal particle diameter.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""decrease""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.0005,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""This can happen when particle attrition or feed-preparation error produces fine char particles."",
+      ""effects"": ""Smaller char particles can increase available surface area and affect reaction rate, heat release, and wall-temperature response.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""char particle diameter"", ""trend"": ""decrease""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.0005, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""This can happen when particle attrition or feed-preparation error produces fine char particles."", ""effects"": ""Smaller char particles can increase available surface area and affect reaction rate, heat release, and wall-temperature response.""}]}",1,char particle diameter,decrease,d_p0(1),0.0005,202,0.0005,0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+openai_S04_R1,openai,OPENAI_MODEL_TO_FILL,1,0,1,7778,1200,S04,coarse_char,Deterministic coarse-char extreme case,Injected char particles are larger than the nominal particle diameter.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Injected char particles are larger than the nominal particle diameter.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""increase""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.002,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""This can happen when the fuel preparation system sends oversized char particles into the bed."",
+      ""effects"": ""Larger char particles can alter burnout behavior, combustion stability, and the temperature distribution.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""char particle diameter"", ""trend"": ""increase""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.002, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""This can happen when the fuel preparation system sends oversized char particles into the bed."", ""effects"": ""Larger char particles can alter burnout behavior, combustion stability, and the temperature distribution.""}]}",1,char particle diameter,increase,d_p0(1),0.002,202,0.0005,0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+openai_S04_R2,openai,OPENAI_MODEL_TO_FILL,2,0,1,7779,1200,S04,coarse_char,Deterministic coarse-char extreme case,Injected char particles are larger than the nominal particle diameter.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Injected char particles are larger than the nominal particle diameter.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""increase""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.002,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""This can happen when the fuel preparation system sends oversized char particles into the bed."",
+      ""effects"": ""Larger char particles can alter burnout behavior, combustion stability, and the temperature distribution.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""char particle diameter"", ""trend"": ""increase""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.002, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""This can happen when the fuel preparation system sends oversized char particles into the bed."", ""effects"": ""Larger char particles can alter burnout behavior, combustion stability, and the temperature distribution.""}]}",1,char particle diameter,increase,d_p0(1),0.002,202,0.0005,0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+openai_S04_R3,openai,OPENAI_MODEL_TO_FILL,3,0,1,7780,1200,S04,coarse_char,Deterministic coarse-char extreme case,Injected char particles are larger than the nominal particle diameter.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Injected char particles are larger than the nominal particle diameter.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""increase""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.002,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""This can happen when the fuel preparation system sends oversized char particles into the bed."",
+      ""effects"": ""Larger char particles can alter burnout behavior, combustion stability, and the temperature distribution.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""char particle diameter"", ""trend"": ""increase""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.002, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""This can happen when the fuel preparation system sends oversized char particles into the bed."", ""effects"": ""Larger char particles can alter burnout behavior, combustion stability, and the temperature distribution.""}]}",1,char particle diameter,increase,d_p0(1),0.002,202,0.0005,0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+openai_S05_R1,openai,OPENAI_MODEL_TO_FILL,1,0,1,7778,1200,S05,coupled_air_fine_char,Deterministic low-air and fine-char coupled case,Insufficient air supply occurs while the injected char particles become finer than nominal.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Insufficient air supply occurs while the injected char particles become finer than nominal.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""decrease""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 2.5,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""This can happen when inlet blockage reduces air supply during operation."",
+      ""effects"": ""Reduced air supply can change combustion stability and wall-temperature behavior.""
+    },
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""decrease""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.0005,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""This can happen when particle attrition produces fine char particles."",
+      ""effects"": ""Smaller char particles can change reaction intensity and heat release.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""decrease""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 2.5, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""This can happen when inlet blockage reduces air supply during operation."", ""effects"": ""Reduced air supply can change combustion stability and wall-temperature behavior.""}, {""answer"": {""component"": ""char particle diameter"", ""trend"": ""decrease""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.0005, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""This can happen when particle attrition produces fine char particles."", ""effects"": ""Smaller char particles can change reaction intensity and heat release.""}]}",2,inlet air velocity;char particle diameter,decrease;decrease,bc_v_g(2);d_p0(1),2.5;0.0005,101;202,2.5;0.0005,5.0;0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+openai_S05_R2,openai,OPENAI_MODEL_TO_FILL,2,0,1,7779,1200,S05,coupled_air_fine_char,Deterministic low-air and fine-char coupled case,Insufficient air supply occurs while the injected char particles become finer than nominal.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Insufficient air supply occurs while the injected char particles become finer than nominal.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""decrease""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 2.5,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""This can happen when inlet blockage reduces air supply during operation."",
+      ""effects"": ""Reduced air supply can change combustion stability and wall-temperature behavior.""
+    },
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""decrease""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.0005,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""This can happen when particle attrition produces fine char particles."",
+      ""effects"": ""Smaller char particles can change reaction intensity and heat release.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""decrease""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 2.5, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""This can happen when inlet blockage reduces air supply during operation."", ""effects"": ""Reduced air supply can change combustion stability and wall-temperature behavior.""}, {""answer"": {""component"": ""char particle diameter"", ""trend"": ""decrease""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.0005, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""This can happen when particle attrition produces fine char particles."", ""effects"": ""Smaller char particles can change reaction intensity and heat release.""}]}",2,inlet air velocity;char particle diameter,decrease;decrease,bc_v_g(2);d_p0(1),2.5;0.0005,101;202,2.5;0.0005,5.0;0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+openai_S05_R3,openai,OPENAI_MODEL_TO_FILL,3,0,1,7780,1200,S05,coupled_air_fine_char,Deterministic low-air and fine-char coupled case,Insufficient air supply occurs while the injected char particles become finer than nominal.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Insufficient air supply occurs while the injected char particles become finer than nominal.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""decrease""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 2.5,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""This can happen when inlet blockage reduces air supply during operation."",
+      ""effects"": ""Reduced air supply can change combustion stability and wall-temperature behavior.""
+    },
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""decrease""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.0005,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""This can happen when particle attrition produces fine char particles."",
+      ""effects"": ""Smaller char particles can change reaction intensity and heat release.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""decrease""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 2.5, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""This can happen when inlet blockage reduces air supply during operation."", ""effects"": ""Reduced air supply can change combustion stability and wall-temperature behavior.""}, {""answer"": {""component"": ""char particle diameter"", ""trend"": ""decrease""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.0005, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""This can happen when particle attrition produces fine char particles."", ""effects"": ""Smaller char particles can change reaction intensity and heat release.""}]}",2,inlet air velocity;char particle diameter,decrease;decrease,bc_v_g(2);d_p0(1),2.5;0.0005,101;202,2.5;0.0005,5.0;0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+openai_S06_R1,openai,OPENAI_MODEL_TO_FILL,1,0,1,7778,1200,S06,coupled_air_coarse_char,Deterministic high-air and coarse-char coupled case,The blower oversupplies air while the char feed contains oversized particles.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: The blower oversupplies air while the char feed contains oversized particles.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""increase""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 5.0,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""This can happen when the blower overshoots the intended operating condition."",
+      ""effects"": ""Higher gas velocity can alter fluidization and combustion response.""
+    },
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""increase""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.002,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""This can happen when oversized char particles are supplied by the fuel preparation system."",
+      ""effects"": ""Larger particles can delay burnout and modify the thermal response.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""increase""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 5.0, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""This can happen when the blower overshoots the intended operating condition."", ""effects"": ""Higher gas velocity can alter fluidization and combustion response.""}, {""answer"": {""component"": ""char particle diameter"", ""trend"": ""increase""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.002, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""This can happen when oversized char particles are supplied by the fuel preparation system."", ""effects"": ""Larger particles can delay burnout and modify the thermal response.""}]}",2,inlet air velocity;char particle diameter,increase;increase,bc_v_g(2);d_p0(1),5.0;0.002,101;202,2.5;0.0005,5.0;0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+openai_S06_R2,openai,OPENAI_MODEL_TO_FILL,2,0,1,7779,1200,S06,coupled_air_coarse_char,Deterministic high-air and coarse-char coupled case,The blower oversupplies air while the char feed contains oversized particles.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: The blower oversupplies air while the char feed contains oversized particles.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""increase""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 5.0,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""This can happen when the blower overshoots the intended operating condition."",
+      ""effects"": ""Higher gas velocity can alter fluidization and combustion response.""
+    },
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""increase""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.002,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""This can happen when oversized char particles are supplied by the fuel preparation system."",
+      ""effects"": ""Larger particles can delay burnout and modify the thermal response.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""increase""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 5.0, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""This can happen when the blower overshoots the intended operating condition."", ""effects"": ""Higher gas velocity can alter fluidization and combustion response.""}, {""answer"": {""component"": ""char particle diameter"", ""trend"": ""increase""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.002, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""This can happen when oversized char particles are supplied by the fuel preparation system."", ""effects"": ""Larger particles can delay burnout and modify the thermal response.""}]}",2,inlet air velocity;char particle diameter,increase;increase,bc_v_g(2);d_p0(1),5.0;0.002,101;202,2.5;0.0005,5.0;0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+openai_S06_R3,openai,OPENAI_MODEL_TO_FILL,3,0,1,7780,1200,S06,coupled_air_coarse_char,Deterministic high-air and coarse-char coupled case,The blower oversupplies air while the char feed contains oversized particles.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: The blower oversupplies air while the char feed contains oversized particles.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""increase""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 5.0,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""This can happen when the blower overshoots the intended operating condition."",
+      ""effects"": ""Higher gas velocity can alter fluidization and combustion response.""
+    },
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""increase""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.002,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""This can happen when oversized char particles are supplied by the fuel preparation system."",
+      ""effects"": ""Larger particles can delay burnout and modify the thermal response.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""increase""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 5.0, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""This can happen when the blower overshoots the intended operating condition."", ""effects"": ""Higher gas velocity can alter fluidization and combustion response.""}, {""answer"": {""component"": ""char particle diameter"", ""trend"": ""increase""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.002, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""This can happen when oversized char particles are supplied by the fuel preparation system."", ""effects"": ""Larger particles can delay burnout and modify the thermal response.""}]}",2,inlet air velocity;char particle diameter,increase;increase,bc_v_g(2);d_p0(1),5.0;0.002,101;202,2.5;0.0005,5.0;0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+openai_S07_R1,openai,OPENAI_MODEL_TO_FILL,1,0,1,7778,1200,S07,mixed_direction,Deterministic high-air and fine-char mixed-direction case,Air injection is higher than nominal while the char feed becomes finer than nominal.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Air injection is higher than nominal while the char feed becomes finer than nominal.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""increase""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 5.0,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""This can happen when an abnormal control command increases the blower output."",
+      ""effects"": ""Higher gas velocity can change bed behavior and heat transfer.""
+    },
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""decrease""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.0005,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""This can happen when particle attrition creates fine char particles."",
+      ""effects"": ""Fine char particles can increase reaction surface area and influence wall-temperature response.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""increase""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 5.0, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""This can happen when an abnormal control command increases the blower output."", ""effects"": ""Higher gas velocity can change bed behavior and heat transfer.""}, {""answer"": {""component"": ""char particle diameter"", ""trend"": ""decrease""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.0005, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""This can happen when particle attrition creates fine char particles."", ""effects"": ""Fine char particles can increase reaction surface area and influence wall-temperature response.""}]}",2,inlet air velocity;char particle diameter,increase;decrease,bc_v_g(2);d_p0(1),5.0;0.0005,101;202,2.5;0.0005,5.0;0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+openai_S07_R2,openai,OPENAI_MODEL_TO_FILL,2,0,1,7779,1200,S07,mixed_direction,Deterministic high-air and fine-char mixed-direction case,Air injection is higher than nominal while the char feed becomes finer than nominal.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Air injection is higher than nominal while the char feed becomes finer than nominal.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""increase""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 5.0,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""This can happen when an abnormal control command increases the blower output."",
+      ""effects"": ""Higher gas velocity can change bed behavior and heat transfer.""
+    },
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""decrease""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.0005,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""This can happen when particle attrition creates fine char particles."",
+      ""effects"": ""Fine char particles can increase reaction surface area and influence wall-temperature response.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""increase""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 5.0, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""This can happen when an abnormal control command increases the blower output."", ""effects"": ""Higher gas velocity can change bed behavior and heat transfer.""}, {""answer"": {""component"": ""char particle diameter"", ""trend"": ""decrease""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.0005, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""This can happen when particle attrition creates fine char particles."", ""effects"": ""Fine char particles can increase reaction surface area and influence wall-temperature response.""}]}",2,inlet air velocity;char particle diameter,increase;decrease,bc_v_g(2);d_p0(1),5.0;0.0005,101;202,2.5;0.0005,5.0;0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+openai_S07_R3,openai,OPENAI_MODEL_TO_FILL,3,0,1,7780,1200,S07,mixed_direction,Deterministic high-air and fine-char mixed-direction case,Air injection is higher than nominal while the char feed becomes finer than nominal.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Air injection is higher than nominal while the char feed becomes finer than nominal.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""increase""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 5.0,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""This can happen when an abnormal control command increases the blower output."",
+      ""effects"": ""Higher gas velocity can change bed behavior and heat transfer.""
+    },
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""decrease""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.0005,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""This can happen when particle attrition creates fine char particles."",
+      ""effects"": ""Fine char particles can increase reaction surface area and influence wall-temperature response.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""increase""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 5.0, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""This can happen when an abnormal control command increases the blower output."", ""effects"": ""Higher gas velocity can change bed behavior and heat transfer.""}, {""answer"": {""component"": ""char particle diameter"", ""trend"": ""decrease""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.0005, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""This can happen when particle attrition creates fine char particles."", ""effects"": ""Fine char particles can increase reaction surface area and influence wall-temperature response.""}]}",2,inlet air velocity;char particle diameter,increase;decrease,bc_v_g(2);d_p0(1),5.0;0.0005,101;202,2.5;0.0005,5.0;0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+openai_S08_R1,openai,OPENAI_MODEL_TO_FILL,1,0,1,7778,1200,S08,nominal_no_change,Deterministic nominal no-change case,The combustor remains at the nominal FBC operating condition without an imposed fault.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: The combustor remains at the nominal FBC operating condition without an imposed fault.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""no change""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 3.75,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""No fault mechanism is imposed in this nominal reference case."",
+      ""effects"": ""The nominal case is used as the reference anchor for normal-to-extreme scenario generation.""
+    },
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""no change""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.00125,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""No particle-size abnormality is imposed in this nominal reference case."",
+      ""effects"": ""The nominal particle diameter is kept fixed as part of the reference FBC condition.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""no change""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 3.75, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""No fault mechanism is imposed in this nominal reference case."", ""effects"": ""The nominal case is used as the reference anchor for normal-to-extreme scenario generation.""}, {""answer"": {""component"": ""char particle diameter"", ""trend"": ""no change""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.00125, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""No particle-size abnormality is imposed in this nominal reference case."", ""effects"": ""The nominal particle diameter is kept fixed as part of the reference FBC condition.""}]}",2,inlet air velocity;char particle diameter,no change;no change,bc_v_g(2);d_p0(1),3.75;0.00125,101;202,2.5;0.0005,5.0;0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+openai_S08_R2,openai,OPENAI_MODEL_TO_FILL,2,0,1,7779,1200,S08,nominal_no_change,Deterministic nominal no-change case,The combustor remains at the nominal FBC operating condition without an imposed fault.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: The combustor remains at the nominal FBC operating condition without an imposed fault.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""no change""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 3.75,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""No fault mechanism is imposed in this nominal reference case."",
+      ""effects"": ""The nominal case is used as the reference anchor for normal-to-extreme scenario generation.""
+    },
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""no change""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.00125,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""No particle-size abnormality is imposed in this nominal reference case."",
+      ""effects"": ""The nominal particle diameter is kept fixed as part of the reference FBC condition.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""no change""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 3.75, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""No fault mechanism is imposed in this nominal reference case."", ""effects"": ""The nominal case is used as the reference anchor for normal-to-extreme scenario generation.""}, {""answer"": {""component"": ""char particle diameter"", ""trend"": ""no change""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.00125, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""No particle-size abnormality is imposed in this nominal reference case."", ""effects"": ""The nominal particle diameter is kept fixed as part of the reference FBC condition.""}]}",2,inlet air velocity;char particle diameter,no change;no change,bc_v_g(2);d_p0(1),3.75;0.00125,101;202,2.5;0.0005,5.0;0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+openai_S08_R3,openai,OPENAI_MODEL_TO_FILL,3,0,1,7780,1200,S08,nominal_no_change,Deterministic nominal no-change case,The combustor remains at the nominal FBC operating condition without an imposed fault.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: The combustor remains at the nominal FBC operating condition without an imposed fault.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""no change""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 3.75,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""No fault mechanism is imposed in this nominal reference case."",
+      ""effects"": ""The nominal case is used as the reference anchor for normal-to-extreme scenario generation.""
+    },
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""no change""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.00125,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""No particle-size abnormality is imposed in this nominal reference case."",
+      ""effects"": ""The nominal particle diameter is kept fixed as part of the reference FBC condition.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""no change""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 3.75, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""No fault mechanism is imposed in this nominal reference case."", ""effects"": ""The nominal case is used as the reference anchor for normal-to-extreme scenario generation.""}, {""answer"": {""component"": ""char particle diameter"", ""trend"": ""no change""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.00125, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""No particle-size abnormality is imposed in this nominal reference case."", ""effects"": ""The nominal particle diameter is kept fixed as part of the reference FBC condition.""}]}",2,inlet air velocity;char particle diameter,no change;no change,bc_v_g(2);d_p0(1),3.75;0.00125,101;202,2.5;0.0005,5.0;0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+anthropic_S01_R1,anthropic,ANTHROPIC_MODEL_TO_FILL,1,0,1,7778,1200,S01,air_starvation,Deterministic low-air extreme case,Insufficient air supply occurs during char combustion.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Insufficient air supply occurs during char combustion.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""decrease""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 2.5,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""This can happen when the inlet blower underperforms or the air inlet is partially blocked."",
+      ""effects"": ""Reduced air supply can alter combustion stability and may increase the risk of abnormal wall-temperature response.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""decrease""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 2.5, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""This can happen when the inlet blower underperforms or the air inlet is partially blocked."", ""effects"": ""Reduced air supply can alter combustion stability and may increase the risk of abnormal wall-temperature response.""}]}",1,inlet air velocity,decrease,bc_v_g(2),2.5,101,2.5,5.0,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+anthropic_S01_R2,anthropic,ANTHROPIC_MODEL_TO_FILL,2,0,1,7779,1200,S01,air_starvation,Deterministic low-air extreme case,Insufficient air supply occurs during char combustion.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Insufficient air supply occurs during char combustion.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""decrease""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 2.5,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""This can happen when the inlet blower underperforms or the air inlet is partially blocked."",
+      ""effects"": ""Reduced air supply can alter combustion stability and may increase the risk of abnormal wall-temperature response.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""decrease""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 2.5, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""This can happen when the inlet blower underperforms or the air inlet is partially blocked."", ""effects"": ""Reduced air supply can alter combustion stability and may increase the risk of abnormal wall-temperature response.""}]}",1,inlet air velocity,decrease,bc_v_g(2),2.5,101,2.5,5.0,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+anthropic_S01_R3,anthropic,ANTHROPIC_MODEL_TO_FILL,3,0,1,7780,1200,S01,air_starvation,Deterministic low-air extreme case,Insufficient air supply occurs during char combustion.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Insufficient air supply occurs during char combustion.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""decrease""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 2.5,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""This can happen when the inlet blower underperforms or the air inlet is partially blocked."",
+      ""effects"": ""Reduced air supply can alter combustion stability and may increase the risk of abnormal wall-temperature response.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""decrease""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 2.5, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""This can happen when the inlet blower underperforms or the air inlet is partially blocked."", ""effects"": ""Reduced air supply can alter combustion stability and may increase the risk of abnormal wall-temperature response.""}]}",1,inlet air velocity,decrease,bc_v_g(2),2.5,101,2.5,5.0,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+anthropic_S02_R1,anthropic,ANTHROPIC_MODEL_TO_FILL,1,0,1,7778,1200,S02,excessive_air,Deterministic high-air extreme case,Excessive air is injected into the combustor.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Excessive air is injected into the combustor.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""increase""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 5.0,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""This can happen when the inlet blower overshoots or an abnormal control command increases gas supply."",
+      ""effects"": ""Excessive air supply can change bed fluidization, combustion intensity, and the wall-temperature response.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""increase""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 5.0, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""This can happen when the inlet blower overshoots or an abnormal control command increases gas supply."", ""effects"": ""Excessive air supply can change bed fluidization, combustion intensity, and the wall-temperature response.""}]}",1,inlet air velocity,increase,bc_v_g(2),5.0,101,2.5,5.0,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+anthropic_S02_R2,anthropic,ANTHROPIC_MODEL_TO_FILL,2,0,1,7779,1200,S02,excessive_air,Deterministic high-air extreme case,Excessive air is injected into the combustor.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Excessive air is injected into the combustor.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""increase""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 5.0,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""This can happen when the inlet blower overshoots or an abnormal control command increases gas supply."",
+      ""effects"": ""Excessive air supply can change bed fluidization, combustion intensity, and the wall-temperature response.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""increase""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 5.0, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""This can happen when the inlet blower overshoots or an abnormal control command increases gas supply."", ""effects"": ""Excessive air supply can change bed fluidization, combustion intensity, and the wall-temperature response.""}]}",1,inlet air velocity,increase,bc_v_g(2),5.0,101,2.5,5.0,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+anthropic_S02_R3,anthropic,ANTHROPIC_MODEL_TO_FILL,3,0,1,7780,1200,S02,excessive_air,Deterministic high-air extreme case,Excessive air is injected into the combustor.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Excessive air is injected into the combustor.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""increase""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 5.0,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""This can happen when the inlet blower overshoots or an abnormal control command increases gas supply."",
+      ""effects"": ""Excessive air supply can change bed fluidization, combustion intensity, and the wall-temperature response.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""increase""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 5.0, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""This can happen when the inlet blower overshoots or an abnormal control command increases gas supply."", ""effects"": ""Excessive air supply can change bed fluidization, combustion intensity, and the wall-temperature response.""}]}",1,inlet air velocity,increase,bc_v_g(2),5.0,101,2.5,5.0,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+anthropic_S03_R1,anthropic,ANTHROPIC_MODEL_TO_FILL,1,0,1,7778,1200,S03,fine_char,Deterministic fine-char extreme case,Injected char particles become abnormally smaller than the nominal particle diameter.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Injected char particles become abnormally smaller than the nominal particle diameter.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""decrease""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.0005,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""This can happen when particle attrition or feed-preparation error produces fine char particles."",
+      ""effects"": ""Smaller char particles can increase available surface area and affect reaction rate, heat release, and wall-temperature response.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""char particle diameter"", ""trend"": ""decrease""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.0005, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""This can happen when particle attrition or feed-preparation error produces fine char particles."", ""effects"": ""Smaller char particles can increase available surface area and affect reaction rate, heat release, and wall-temperature response.""}]}",1,char particle diameter,decrease,d_p0(1),0.0005,202,0.0005,0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+anthropic_S03_R2,anthropic,ANTHROPIC_MODEL_TO_FILL,2,0,1,7779,1200,S03,fine_char,Deterministic fine-char extreme case,Injected char particles become abnormally smaller than the nominal particle diameter.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Injected char particles become abnormally smaller than the nominal particle diameter.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""decrease""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.0005,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""This can happen when particle attrition or feed-preparation error produces fine char particles."",
+      ""effects"": ""Smaller char particles can increase available surface area and affect reaction rate, heat release, and wall-temperature response.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""char particle diameter"", ""trend"": ""decrease""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.0005, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""This can happen when particle attrition or feed-preparation error produces fine char particles."", ""effects"": ""Smaller char particles can increase available surface area and affect reaction rate, heat release, and wall-temperature response.""}]}",1,char particle diameter,decrease,d_p0(1),0.0005,202,0.0005,0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+anthropic_S03_R3,anthropic,ANTHROPIC_MODEL_TO_FILL,3,0,1,7780,1200,S03,fine_char,Deterministic fine-char extreme case,Injected char particles become abnormally smaller than the nominal particle diameter.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Injected char particles become abnormally smaller than the nominal particle diameter.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""decrease""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.0005,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""This can happen when particle attrition or feed-preparation error produces fine char particles."",
+      ""effects"": ""Smaller char particles can increase available surface area and affect reaction rate, heat release, and wall-temperature response.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""char particle diameter"", ""trend"": ""decrease""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.0005, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""This can happen when particle attrition or feed-preparation error produces fine char particles."", ""effects"": ""Smaller char particles can increase available surface area and affect reaction rate, heat release, and wall-temperature response.""}]}",1,char particle diameter,decrease,d_p0(1),0.0005,202,0.0005,0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+anthropic_S04_R1,anthropic,ANTHROPIC_MODEL_TO_FILL,1,0,1,7778,1200,S04,coarse_char,Deterministic coarse-char extreme case,Injected char particles are larger than the nominal particle diameter.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Injected char particles are larger than the nominal particle diameter.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""increase""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.002,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""This can happen when the fuel preparation system sends oversized char particles into the bed."",
+      ""effects"": ""Larger char particles can alter burnout behavior, combustion stability, and the temperature distribution.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""char particle diameter"", ""trend"": ""increase""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.002, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""This can happen when the fuel preparation system sends oversized char particles into the bed."", ""effects"": ""Larger char particles can alter burnout behavior, combustion stability, and the temperature distribution.""}]}",1,char particle diameter,increase,d_p0(1),0.002,202,0.0005,0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+anthropic_S04_R2,anthropic,ANTHROPIC_MODEL_TO_FILL,2,0,1,7779,1200,S04,coarse_char,Deterministic coarse-char extreme case,Injected char particles are larger than the nominal particle diameter.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Injected char particles are larger than the nominal particle diameter.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""increase""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.002,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""This can happen when the fuel preparation system sends oversized char particles into the bed."",
+      ""effects"": ""Larger char particles can alter burnout behavior, combustion stability, and the temperature distribution.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""char particle diameter"", ""trend"": ""increase""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.002, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""This can happen when the fuel preparation system sends oversized char particles into the bed."", ""effects"": ""Larger char particles can alter burnout behavior, combustion stability, and the temperature distribution.""}]}",1,char particle diameter,increase,d_p0(1),0.002,202,0.0005,0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+anthropic_S04_R3,anthropic,ANTHROPIC_MODEL_TO_FILL,3,0,1,7780,1200,S04,coarse_char,Deterministic coarse-char extreme case,Injected char particles are larger than the nominal particle diameter.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Injected char particles are larger than the nominal particle diameter.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""increase""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.002,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""This can happen when the fuel preparation system sends oversized char particles into the bed."",
+      ""effects"": ""Larger char particles can alter burnout behavior, combustion stability, and the temperature distribution.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""char particle diameter"", ""trend"": ""increase""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.002, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""This can happen when the fuel preparation system sends oversized char particles into the bed."", ""effects"": ""Larger char particles can alter burnout behavior, combustion stability, and the temperature distribution.""}]}",1,char particle diameter,increase,d_p0(1),0.002,202,0.0005,0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+anthropic_S05_R1,anthropic,ANTHROPIC_MODEL_TO_FILL,1,0,1,7778,1200,S05,coupled_air_fine_char,Deterministic low-air and fine-char coupled case,Insufficient air supply occurs while the injected char particles become finer than nominal.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Insufficient air supply occurs while the injected char particles become finer than nominal.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""decrease""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 2.5,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""This can happen when inlet blockage reduces air supply during operation."",
+      ""effects"": ""Reduced air supply can change combustion stability and wall-temperature behavior.""
+    },
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""decrease""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.0005,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""This can happen when particle attrition produces fine char particles."",
+      ""effects"": ""Smaller char particles can change reaction intensity and heat release.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""decrease""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 2.5, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""This can happen when inlet blockage reduces air supply during operation."", ""effects"": ""Reduced air supply can change combustion stability and wall-temperature behavior.""}, {""answer"": {""component"": ""char particle diameter"", ""trend"": ""decrease""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.0005, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""This can happen when particle attrition produces fine char particles."", ""effects"": ""Smaller char particles can change reaction intensity and heat release.""}]}",2,inlet air velocity;char particle diameter,decrease;decrease,bc_v_g(2);d_p0(1),2.5;0.0005,101;202,2.5;0.0005,5.0;0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+anthropic_S05_R2,anthropic,ANTHROPIC_MODEL_TO_FILL,2,0,1,7779,1200,S05,coupled_air_fine_char,Deterministic low-air and fine-char coupled case,Insufficient air supply occurs while the injected char particles become finer than nominal.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Insufficient air supply occurs while the injected char particles become finer than nominal.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""decrease""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 2.5,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""This can happen when inlet blockage reduces air supply during operation."",
+      ""effects"": ""Reduced air supply can change combustion stability and wall-temperature behavior.""
+    },
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""decrease""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.0005,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""This can happen when particle attrition produces fine char particles."",
+      ""effects"": ""Smaller char particles can change reaction intensity and heat release.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""decrease""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 2.5, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""This can happen when inlet blockage reduces air supply during operation."", ""effects"": ""Reduced air supply can change combustion stability and wall-temperature behavior.""}, {""answer"": {""component"": ""char particle diameter"", ""trend"": ""decrease""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.0005, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""This can happen when particle attrition produces fine char particles."", ""effects"": ""Smaller char particles can change reaction intensity and heat release.""}]}",2,inlet air velocity;char particle diameter,decrease;decrease,bc_v_g(2);d_p0(1),2.5;0.0005,101;202,2.5;0.0005,5.0;0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+anthropic_S05_R3,anthropic,ANTHROPIC_MODEL_TO_FILL,3,0,1,7780,1200,S05,coupled_air_fine_char,Deterministic low-air and fine-char coupled case,Insufficient air supply occurs while the injected char particles become finer than nominal.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Insufficient air supply occurs while the injected char particles become finer than nominal.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""decrease""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 2.5,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""This can happen when inlet blockage reduces air supply during operation."",
+      ""effects"": ""Reduced air supply can change combustion stability and wall-temperature behavior.""
+    },
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""decrease""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.0005,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""This can happen when particle attrition produces fine char particles."",
+      ""effects"": ""Smaller char particles can change reaction intensity and heat release.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""decrease""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 2.5, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""This can happen when inlet blockage reduces air supply during operation."", ""effects"": ""Reduced air supply can change combustion stability and wall-temperature behavior.""}, {""answer"": {""component"": ""char particle diameter"", ""trend"": ""decrease""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.0005, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""This can happen when particle attrition produces fine char particles."", ""effects"": ""Smaller char particles can change reaction intensity and heat release.""}]}",2,inlet air velocity;char particle diameter,decrease;decrease,bc_v_g(2);d_p0(1),2.5;0.0005,101;202,2.5;0.0005,5.0;0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+anthropic_S06_R1,anthropic,ANTHROPIC_MODEL_TO_FILL,1,0,1,7778,1200,S06,coupled_air_coarse_char,Deterministic high-air and coarse-char coupled case,The blower oversupplies air while the char feed contains oversized particles.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: The blower oversupplies air while the char feed contains oversized particles.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""increase""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 5.0,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""This can happen when the blower overshoots the intended operating condition."",
+      ""effects"": ""Higher gas velocity can alter fluidization and combustion response.""
+    },
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""increase""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.002,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""This can happen when oversized char particles are supplied by the fuel preparation system."",
+      ""effects"": ""Larger particles can delay burnout and modify the thermal response.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""increase""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 5.0, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""This can happen when the blower overshoots the intended operating condition."", ""effects"": ""Higher gas velocity can alter fluidization and combustion response.""}, {""answer"": {""component"": ""char particle diameter"", ""trend"": ""increase""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.002, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""This can happen when oversized char particles are supplied by the fuel preparation system."", ""effects"": ""Larger particles can delay burnout and modify the thermal response.""}]}",2,inlet air velocity;char particle diameter,increase;increase,bc_v_g(2);d_p0(1),5.0;0.002,101;202,2.5;0.0005,5.0;0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+anthropic_S06_R2,anthropic,ANTHROPIC_MODEL_TO_FILL,2,0,1,7779,1200,S06,coupled_air_coarse_char,Deterministic high-air and coarse-char coupled case,The blower oversupplies air while the char feed contains oversized particles.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: The blower oversupplies air while the char feed contains oversized particles.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""increase""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 5.0,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""This can happen when the blower overshoots the intended operating condition."",
+      ""effects"": ""Higher gas velocity can alter fluidization and combustion response.""
+    },
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""increase""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.002,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""This can happen when oversized char particles are supplied by the fuel preparation system."",
+      ""effects"": ""Larger particles can delay burnout and modify the thermal response.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""increase""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 5.0, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""This can happen when the blower overshoots the intended operating condition."", ""effects"": ""Higher gas velocity can alter fluidization and combustion response.""}, {""answer"": {""component"": ""char particle diameter"", ""trend"": ""increase""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.002, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""This can happen when oversized char particles are supplied by the fuel preparation system."", ""effects"": ""Larger particles can delay burnout and modify the thermal response.""}]}",2,inlet air velocity;char particle diameter,increase;increase,bc_v_g(2);d_p0(1),5.0;0.002,101;202,2.5;0.0005,5.0;0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+anthropic_S06_R3,anthropic,ANTHROPIC_MODEL_TO_FILL,3,0,1,7780,1200,S06,coupled_air_coarse_char,Deterministic high-air and coarse-char coupled case,The blower oversupplies air while the char feed contains oversized particles.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: The blower oversupplies air while the char feed contains oversized particles.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""increase""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 5.0,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""This can happen when the blower overshoots the intended operating condition."",
+      ""effects"": ""Higher gas velocity can alter fluidization and combustion response.""
+    },
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""increase""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.002,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""This can happen when oversized char particles are supplied by the fuel preparation system."",
+      ""effects"": ""Larger particles can delay burnout and modify the thermal response.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""increase""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 5.0, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""This can happen when the blower overshoots the intended operating condition."", ""effects"": ""Higher gas velocity can alter fluidization and combustion response.""}, {""answer"": {""component"": ""char particle diameter"", ""trend"": ""increase""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.002, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""This can happen when oversized char particles are supplied by the fuel preparation system."", ""effects"": ""Larger particles can delay burnout and modify the thermal response.""}]}",2,inlet air velocity;char particle diameter,increase;increase,bc_v_g(2);d_p0(1),5.0;0.002,101;202,2.5;0.0005,5.0;0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+anthropic_S07_R1,anthropic,ANTHROPIC_MODEL_TO_FILL,1,0,1,7778,1200,S07,mixed_direction,Deterministic high-air and fine-char mixed-direction case,Air injection is higher than nominal while the char feed becomes finer than nominal.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Air injection is higher than nominal while the char feed becomes finer than nominal.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""increase""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 5.0,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""This can happen when an abnormal control command increases the blower output."",
+      ""effects"": ""Higher gas velocity can change bed behavior and heat transfer.""
+    },
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""decrease""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.0005,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""This can happen when particle attrition creates fine char particles."",
+      ""effects"": ""Fine char particles can increase reaction surface area and influence wall-temperature response.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""increase""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 5.0, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""This can happen when an abnormal control command increases the blower output."", ""effects"": ""Higher gas velocity can change bed behavior and heat transfer.""}, {""answer"": {""component"": ""char particle diameter"", ""trend"": ""decrease""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.0005, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""This can happen when particle attrition creates fine char particles."", ""effects"": ""Fine char particles can increase reaction surface area and influence wall-temperature response.""}]}",2,inlet air velocity;char particle diameter,increase;decrease,bc_v_g(2);d_p0(1),5.0;0.0005,101;202,2.5;0.0005,5.0;0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+anthropic_S07_R2,anthropic,ANTHROPIC_MODEL_TO_FILL,2,0,1,7779,1200,S07,mixed_direction,Deterministic high-air and fine-char mixed-direction case,Air injection is higher than nominal while the char feed becomes finer than nominal.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Air injection is higher than nominal while the char feed becomes finer than nominal.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""increase""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 5.0,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""This can happen when an abnormal control command increases the blower output."",
+      ""effects"": ""Higher gas velocity can change bed behavior and heat transfer.""
+    },
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""decrease""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.0005,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""This can happen when particle attrition creates fine char particles."",
+      ""effects"": ""Fine char particles can increase reaction surface area and influence wall-temperature response.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""increase""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 5.0, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""This can happen when an abnormal control command increases the blower output."", ""effects"": ""Higher gas velocity can change bed behavior and heat transfer.""}, {""answer"": {""component"": ""char particle diameter"", ""trend"": ""decrease""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.0005, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""This can happen when particle attrition creates fine char particles."", ""effects"": ""Fine char particles can increase reaction surface area and influence wall-temperature response.""}]}",2,inlet air velocity;char particle diameter,increase;decrease,bc_v_g(2);d_p0(1),5.0;0.0005,101;202,2.5;0.0005,5.0;0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+anthropic_S07_R3,anthropic,ANTHROPIC_MODEL_TO_FILL,3,0,1,7780,1200,S07,mixed_direction,Deterministic high-air and fine-char mixed-direction case,Air injection is higher than nominal while the char feed becomes finer than nominal.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Air injection is higher than nominal while the char feed becomes finer than nominal.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""increase""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 5.0,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""This can happen when an abnormal control command increases the blower output."",
+      ""effects"": ""Higher gas velocity can change bed behavior and heat transfer.""
+    },
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""decrease""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.0005,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""This can happen when particle attrition creates fine char particles."",
+      ""effects"": ""Fine char particles can increase reaction surface area and influence wall-temperature response.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""increase""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 5.0, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""This can happen when an abnormal control command increases the blower output."", ""effects"": ""Higher gas velocity can change bed behavior and heat transfer.""}, {""answer"": {""component"": ""char particle diameter"", ""trend"": ""decrease""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.0005, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""This can happen when particle attrition creates fine char particles."", ""effects"": ""Fine char particles can increase reaction surface area and influence wall-temperature response.""}]}",2,inlet air velocity;char particle diameter,increase;decrease,bc_v_g(2);d_p0(1),5.0;0.0005,101;202,2.5;0.0005,5.0;0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+anthropic_S08_R1,anthropic,ANTHROPIC_MODEL_TO_FILL,1,0,1,7778,1200,S08,nominal_no_change,Deterministic nominal no-change case,The combustor remains at the nominal FBC operating condition without an imposed fault.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: The combustor remains at the nominal FBC operating condition without an imposed fault.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""no change""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 3.75,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""No fault mechanism is imposed in this nominal reference case."",
+      ""effects"": ""The nominal case is used as the reference anchor for normal-to-extreme scenario generation.""
+    },
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""no change""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.00125,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""No particle-size abnormality is imposed in this nominal reference case."",
+      ""effects"": ""The nominal particle diameter is kept fixed as part of the reference FBC condition.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""no change""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 3.75, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""No fault mechanism is imposed in this nominal reference case."", ""effects"": ""The nominal case is used as the reference anchor for normal-to-extreme scenario generation.""}, {""answer"": {""component"": ""char particle diameter"", ""trend"": ""no change""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.00125, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""No particle-size abnormality is imposed in this nominal reference case."", ""effects"": ""The nominal particle diameter is kept fixed as part of the reference FBC condition.""}]}",2,inlet air velocity;char particle diameter,no change;no change,bc_v_g(2);d_p0(1),3.75;0.00125,101;202,2.5;0.0005,5.0;0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+anthropic_S08_R2,anthropic,ANTHROPIC_MODEL_TO_FILL,2,0,1,7779,1200,S08,nominal_no_change,Deterministic nominal no-change case,The combustor remains at the nominal FBC operating condition without an imposed fault.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: The combustor remains at the nominal FBC operating condition without an imposed fault.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""no change""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 3.75,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""No fault mechanism is imposed in this nominal reference case."",
+      ""effects"": ""The nominal case is used as the reference anchor for normal-to-extreme scenario generation.""
+    },
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""no change""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.00125,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""No particle-size abnormality is imposed in this nominal reference case."",
+      ""effects"": ""The nominal particle diameter is kept fixed as part of the reference FBC condition.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""no change""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 3.75, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""No fault mechanism is imposed in this nominal reference case."", ""effects"": ""The nominal case is used as the reference anchor for normal-to-extreme scenario generation.""}, {""answer"": {""component"": ""char particle diameter"", ""trend"": ""no change""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.00125, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""No particle-size abnormality is imposed in this nominal reference case."", ""effects"": ""The nominal particle diameter is kept fixed as part of the reference FBC condition.""}]}",2,inlet air velocity;char particle diameter,no change;no change,bc_v_g(2);d_p0(1),3.75;0.00125,101;202,2.5;0.0005,5.0;0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+anthropic_S08_R3,anthropic,ANTHROPIC_MODEL_TO_FILL,3,0,1,7780,1200,S08,nominal_no_change,Deterministic nominal no-change case,The combustor remains at the nominal FBC operating condition without an imposed fault.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: The combustor remains at the nominal FBC operating condition without an imposed fault.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""no change""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 3.75,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""No fault mechanism is imposed in this nominal reference case."",
+      ""effects"": ""The nominal case is used as the reference anchor for normal-to-extreme scenario generation.""
+    },
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""no change""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.00125,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""No particle-size abnormality is imposed in this nominal reference case."",
+      ""effects"": ""The nominal particle diameter is kept fixed as part of the reference FBC condition.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""no change""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 3.75, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""No fault mechanism is imposed in this nominal reference case."", ""effects"": ""The nominal case is used as the reference anchor for normal-to-extreme scenario generation.""}, {""answer"": {""component"": ""char particle diameter"", ""trend"": ""no change""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.00125, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""No particle-size abnormality is imposed in this nominal reference case."", ""effects"": ""The nominal particle diameter is kept fixed as part of the reference FBC condition.""}]}",2,inlet air velocity;char particle diameter,no change;no change,bc_v_g(2);d_p0(1),3.75;0.00125,101;202,2.5;0.0005,5.0;0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+qwen_S01_R1,qwen,QWEN_MODEL_TO_FILL,1,0,1,7778,1200,S01,air_starvation,Deterministic low-air extreme case,Insufficient air supply occurs during char combustion.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Insufficient air supply occurs during char combustion.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""decrease""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 2.5,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""This can happen when the inlet blower underperforms or the air inlet is partially blocked."",
+      ""effects"": ""Reduced air supply can alter combustion stability and may increase the risk of abnormal wall-temperature response.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""decrease""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 2.5, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""This can happen when the inlet blower underperforms or the air inlet is partially blocked."", ""effects"": ""Reduced air supply can alter combustion stability and may increase the risk of abnormal wall-temperature response.""}]}",1,inlet air velocity,decrease,bc_v_g(2),2.5,101,2.5,5.0,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+qwen_S01_R2,qwen,QWEN_MODEL_TO_FILL,2,0,1,7779,1200,S01,air_starvation,Deterministic low-air extreme case,Insufficient air supply occurs during char combustion.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Insufficient air supply occurs during char combustion.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""decrease""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 2.5,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""This can happen when the inlet blower underperforms or the air inlet is partially blocked."",
+      ""effects"": ""Reduced air supply can alter combustion stability and may increase the risk of abnormal wall-temperature response.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""decrease""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 2.5, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""This can happen when the inlet blower underperforms or the air inlet is partially blocked."", ""effects"": ""Reduced air supply can alter combustion stability and may increase the risk of abnormal wall-temperature response.""}]}",1,inlet air velocity,decrease,bc_v_g(2),2.5,101,2.5,5.0,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+qwen_S01_R3,qwen,QWEN_MODEL_TO_FILL,3,0,1,7780,1200,S01,air_starvation,Deterministic low-air extreme case,Insufficient air supply occurs during char combustion.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Insufficient air supply occurs during char combustion.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""decrease""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 2.5,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""This can happen when the inlet blower underperforms or the air inlet is partially blocked."",
+      ""effects"": ""Reduced air supply can alter combustion stability and may increase the risk of abnormal wall-temperature response.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""decrease""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 2.5, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""This can happen when the inlet blower underperforms or the air inlet is partially blocked."", ""effects"": ""Reduced air supply can alter combustion stability and may increase the risk of abnormal wall-temperature response.""}]}",1,inlet air velocity,decrease,bc_v_g(2),2.5,101,2.5,5.0,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+qwen_S02_R1,qwen,QWEN_MODEL_TO_FILL,1,0,1,7778,1200,S02,excessive_air,Deterministic high-air extreme case,Excessive air is injected into the combustor.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Excessive air is injected into the combustor.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""increase""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 5.0,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""This can happen when the inlet blower overshoots or an abnormal control command increases gas supply."",
+      ""effects"": ""Excessive air supply can change bed fluidization, combustion intensity, and the wall-temperature response.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""increase""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 5.0, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""This can happen when the inlet blower overshoots or an abnormal control command increases gas supply."", ""effects"": ""Excessive air supply can change bed fluidization, combustion intensity, and the wall-temperature response.""}]}",1,inlet air velocity,increase,bc_v_g(2),5.0,101,2.5,5.0,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+qwen_S02_R2,qwen,QWEN_MODEL_TO_FILL,2,0,1,7779,1200,S02,excessive_air,Deterministic high-air extreme case,Excessive air is injected into the combustor.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Excessive air is injected into the combustor.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""increase""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 5.0,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""This can happen when the inlet blower overshoots or an abnormal control command increases gas supply."",
+      ""effects"": ""Excessive air supply can change bed fluidization, combustion intensity, and the wall-temperature response.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""increase""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 5.0, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""This can happen when the inlet blower overshoots or an abnormal control command increases gas supply."", ""effects"": ""Excessive air supply can change bed fluidization, combustion intensity, and the wall-temperature response.""}]}",1,inlet air velocity,increase,bc_v_g(2),5.0,101,2.5,5.0,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+qwen_S02_R3,qwen,QWEN_MODEL_TO_FILL,3,0,1,7780,1200,S02,excessive_air,Deterministic high-air extreme case,Excessive air is injected into the combustor.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Excessive air is injected into the combustor.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""increase""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 5.0,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""This can happen when the inlet blower overshoots or an abnormal control command increases gas supply."",
+      ""effects"": ""Excessive air supply can change bed fluidization, combustion intensity, and the wall-temperature response.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""increase""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 5.0, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""This can happen when the inlet blower overshoots or an abnormal control command increases gas supply."", ""effects"": ""Excessive air supply can change bed fluidization, combustion intensity, and the wall-temperature response.""}]}",1,inlet air velocity,increase,bc_v_g(2),5.0,101,2.5,5.0,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+qwen_S03_R1,qwen,QWEN_MODEL_TO_FILL,1,0,1,7778,1200,S03,fine_char,Deterministic fine-char extreme case,Injected char particles become abnormally smaller than the nominal particle diameter.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Injected char particles become abnormally smaller than the nominal particle diameter.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""decrease""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.0005,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""This can happen when particle attrition or feed-preparation error produces fine char particles."",
+      ""effects"": ""Smaller char particles can increase available surface area and affect reaction rate, heat release, and wall-temperature response.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""char particle diameter"", ""trend"": ""decrease""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.0005, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""This can happen when particle attrition or feed-preparation error produces fine char particles."", ""effects"": ""Smaller char particles can increase available surface area and affect reaction rate, heat release, and wall-temperature response.""}]}",1,char particle diameter,decrease,d_p0(1),0.0005,202,0.0005,0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+qwen_S03_R2,qwen,QWEN_MODEL_TO_FILL,2,0,1,7779,1200,S03,fine_char,Deterministic fine-char extreme case,Injected char particles become abnormally smaller than the nominal particle diameter.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Injected char particles become abnormally smaller than the nominal particle diameter.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""decrease""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.0005,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""This can happen when particle attrition or feed-preparation error produces fine char particles."",
+      ""effects"": ""Smaller char particles can increase available surface area and affect reaction rate, heat release, and wall-temperature response.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""char particle diameter"", ""trend"": ""decrease""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.0005, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""This can happen when particle attrition or feed-preparation error produces fine char particles."", ""effects"": ""Smaller char particles can increase available surface area and affect reaction rate, heat release, and wall-temperature response.""}]}",1,char particle diameter,decrease,d_p0(1),0.0005,202,0.0005,0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+qwen_S03_R3,qwen,QWEN_MODEL_TO_FILL,3,0,1,7780,1200,S03,fine_char,Deterministic fine-char extreme case,Injected char particles become abnormally smaller than the nominal particle diameter.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Injected char particles become abnormally smaller than the nominal particle diameter.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""decrease""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.0005,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""This can happen when particle attrition or feed-preparation error produces fine char particles."",
+      ""effects"": ""Smaller char particles can increase available surface area and affect reaction rate, heat release, and wall-temperature response.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""char particle diameter"", ""trend"": ""decrease""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.0005, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""This can happen when particle attrition or feed-preparation error produces fine char particles."", ""effects"": ""Smaller char particles can increase available surface area and affect reaction rate, heat release, and wall-temperature response.""}]}",1,char particle diameter,decrease,d_p0(1),0.0005,202,0.0005,0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+qwen_S04_R1,qwen,QWEN_MODEL_TO_FILL,1,0,1,7778,1200,S04,coarse_char,Deterministic coarse-char extreme case,Injected char particles are larger than the nominal particle diameter.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Injected char particles are larger than the nominal particle diameter.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""increase""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.002,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""This can happen when the fuel preparation system sends oversized char particles into the bed."",
+      ""effects"": ""Larger char particles can alter burnout behavior, combustion stability, and the temperature distribution.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""char particle diameter"", ""trend"": ""increase""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.002, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""This can happen when the fuel preparation system sends oversized char particles into the bed."", ""effects"": ""Larger char particles can alter burnout behavior, combustion stability, and the temperature distribution.""}]}",1,char particle diameter,increase,d_p0(1),0.002,202,0.0005,0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+qwen_S04_R2,qwen,QWEN_MODEL_TO_FILL,2,0,1,7779,1200,S04,coarse_char,Deterministic coarse-char extreme case,Injected char particles are larger than the nominal particle diameter.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Injected char particles are larger than the nominal particle diameter.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""increase""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.002,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""This can happen when the fuel preparation system sends oversized char particles into the bed."",
+      ""effects"": ""Larger char particles can alter burnout behavior, combustion stability, and the temperature distribution.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""char particle diameter"", ""trend"": ""increase""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.002, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""This can happen when the fuel preparation system sends oversized char particles into the bed."", ""effects"": ""Larger char particles can alter burnout behavior, combustion stability, and the temperature distribution.""}]}",1,char particle diameter,increase,d_p0(1),0.002,202,0.0005,0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+qwen_S04_R3,qwen,QWEN_MODEL_TO_FILL,3,0,1,7780,1200,S04,coarse_char,Deterministic coarse-char extreme case,Injected char particles are larger than the nominal particle diameter.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Injected char particles are larger than the nominal particle diameter.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""increase""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.002,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""This can happen when the fuel preparation system sends oversized char particles into the bed."",
+      ""effects"": ""Larger char particles can alter burnout behavior, combustion stability, and the temperature distribution.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""char particle diameter"", ""trend"": ""increase""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.002, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""This can happen when the fuel preparation system sends oversized char particles into the bed."", ""effects"": ""Larger char particles can alter burnout behavior, combustion stability, and the temperature distribution.""}]}",1,char particle diameter,increase,d_p0(1),0.002,202,0.0005,0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+qwen_S05_R1,qwen,QWEN_MODEL_TO_FILL,1,0,1,7778,1200,S05,coupled_air_fine_char,Deterministic low-air and fine-char coupled case,Insufficient air supply occurs while the injected char particles become finer than nominal.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Insufficient air supply occurs while the injected char particles become finer than nominal.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""decrease""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 2.5,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""This can happen when inlet blockage reduces air supply during operation."",
+      ""effects"": ""Reduced air supply can change combustion stability and wall-temperature behavior.""
+    },
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""decrease""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.0005,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""This can happen when particle attrition produces fine char particles."",
+      ""effects"": ""Smaller char particles can change reaction intensity and heat release.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""decrease""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 2.5, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""This can happen when inlet blockage reduces air supply during operation."", ""effects"": ""Reduced air supply can change combustion stability and wall-temperature behavior.""}, {""answer"": {""component"": ""char particle diameter"", ""trend"": ""decrease""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.0005, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""This can happen when particle attrition produces fine char particles."", ""effects"": ""Smaller char particles can change reaction intensity and heat release.""}]}",2,inlet air velocity;char particle diameter,decrease;decrease,bc_v_g(2);d_p0(1),2.5;0.0005,101;202,2.5;0.0005,5.0;0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+qwen_S05_R2,qwen,QWEN_MODEL_TO_FILL,2,0,1,7779,1200,S05,coupled_air_fine_char,Deterministic low-air and fine-char coupled case,Insufficient air supply occurs while the injected char particles become finer than nominal.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Insufficient air supply occurs while the injected char particles become finer than nominal.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""decrease""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 2.5,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""This can happen when inlet blockage reduces air supply during operation."",
+      ""effects"": ""Reduced air supply can change combustion stability and wall-temperature behavior.""
+    },
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""decrease""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.0005,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""This can happen when particle attrition produces fine char particles."",
+      ""effects"": ""Smaller char particles can change reaction intensity and heat release.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""decrease""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 2.5, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""This can happen when inlet blockage reduces air supply during operation."", ""effects"": ""Reduced air supply can change combustion stability and wall-temperature behavior.""}, {""answer"": {""component"": ""char particle diameter"", ""trend"": ""decrease""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.0005, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""This can happen when particle attrition produces fine char particles."", ""effects"": ""Smaller char particles can change reaction intensity and heat release.""}]}",2,inlet air velocity;char particle diameter,decrease;decrease,bc_v_g(2);d_p0(1),2.5;0.0005,101;202,2.5;0.0005,5.0;0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+qwen_S05_R3,qwen,QWEN_MODEL_TO_FILL,3,0,1,7780,1200,S05,coupled_air_fine_char,Deterministic low-air and fine-char coupled case,Insufficient air supply occurs while the injected char particles become finer than nominal.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Insufficient air supply occurs while the injected char particles become finer than nominal.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""decrease""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 2.5,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""This can happen when inlet blockage reduces air supply during operation."",
+      ""effects"": ""Reduced air supply can change combustion stability and wall-temperature behavior.""
+    },
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""decrease""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.0005,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""This can happen when particle attrition produces fine char particles."",
+      ""effects"": ""Smaller char particles can change reaction intensity and heat release.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""decrease""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 2.5, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""This can happen when inlet blockage reduces air supply during operation."", ""effects"": ""Reduced air supply can change combustion stability and wall-temperature behavior.""}, {""answer"": {""component"": ""char particle diameter"", ""trend"": ""decrease""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.0005, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""This can happen when particle attrition produces fine char particles."", ""effects"": ""Smaller char particles can change reaction intensity and heat release.""}]}",2,inlet air velocity;char particle diameter,decrease;decrease,bc_v_g(2);d_p0(1),2.5;0.0005,101;202,2.5;0.0005,5.0;0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+qwen_S06_R1,qwen,QWEN_MODEL_TO_FILL,1,0,1,7778,1200,S06,coupled_air_coarse_char,Deterministic high-air and coarse-char coupled case,The blower oversupplies air while the char feed contains oversized particles.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: The blower oversupplies air while the char feed contains oversized particles.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""increase""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 5.0,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""This can happen when the blower overshoots the intended operating condition."",
+      ""effects"": ""Higher gas velocity can alter fluidization and combustion response.""
+    },
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""increase""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.002,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""This can happen when oversized char particles are supplied by the fuel preparation system."",
+      ""effects"": ""Larger particles can delay burnout and modify the thermal response.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""increase""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 5.0, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""This can happen when the blower overshoots the intended operating condition."", ""effects"": ""Higher gas velocity can alter fluidization and combustion response.""}, {""answer"": {""component"": ""char particle diameter"", ""trend"": ""increase""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.002, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""This can happen when oversized char particles are supplied by the fuel preparation system."", ""effects"": ""Larger particles can delay burnout and modify the thermal response.""}]}",2,inlet air velocity;char particle diameter,increase;increase,bc_v_g(2);d_p0(1),5.0;0.002,101;202,2.5;0.0005,5.0;0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+qwen_S06_R2,qwen,QWEN_MODEL_TO_FILL,2,0,1,7779,1200,S06,coupled_air_coarse_char,Deterministic high-air and coarse-char coupled case,The blower oversupplies air while the char feed contains oversized particles.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: The blower oversupplies air while the char feed contains oversized particles.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""increase""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 5.0,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""This can happen when the blower overshoots the intended operating condition."",
+      ""effects"": ""Higher gas velocity can alter fluidization and combustion response.""
+    },
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""increase""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.002,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""This can happen when oversized char particles are supplied by the fuel preparation system."",
+      ""effects"": ""Larger particles can delay burnout and modify the thermal response.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""increase""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 5.0, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""This can happen when the blower overshoots the intended operating condition."", ""effects"": ""Higher gas velocity can alter fluidization and combustion response.""}, {""answer"": {""component"": ""char particle diameter"", ""trend"": ""increase""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.002, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""This can happen when oversized char particles are supplied by the fuel preparation system."", ""effects"": ""Larger particles can delay burnout and modify the thermal response.""}]}",2,inlet air velocity;char particle diameter,increase;increase,bc_v_g(2);d_p0(1),5.0;0.002,101;202,2.5;0.0005,5.0;0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+qwen_S06_R3,qwen,QWEN_MODEL_TO_FILL,3,0,1,7780,1200,S06,coupled_air_coarse_char,Deterministic high-air and coarse-char coupled case,The blower oversupplies air while the char feed contains oversized particles.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: The blower oversupplies air while the char feed contains oversized particles.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""increase""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 5.0,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""This can happen when the blower overshoots the intended operating condition."",
+      ""effects"": ""Higher gas velocity can alter fluidization and combustion response.""
+    },
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""increase""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.002,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""This can happen when oversized char particles are supplied by the fuel preparation system."",
+      ""effects"": ""Larger particles can delay burnout and modify the thermal response.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""increase""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 5.0, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""This can happen when the blower overshoots the intended operating condition."", ""effects"": ""Higher gas velocity can alter fluidization and combustion response.""}, {""answer"": {""component"": ""char particle diameter"", ""trend"": ""increase""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.002, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""This can happen when oversized char particles are supplied by the fuel preparation system."", ""effects"": ""Larger particles can delay burnout and modify the thermal response.""}]}",2,inlet air velocity;char particle diameter,increase;increase,bc_v_g(2);d_p0(1),5.0;0.002,101;202,2.5;0.0005,5.0;0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+qwen_S07_R1,qwen,QWEN_MODEL_TO_FILL,1,0,1,7778,1200,S07,mixed_direction,Deterministic high-air and fine-char mixed-direction case,Air injection is higher than nominal while the char feed becomes finer than nominal.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Air injection is higher than nominal while the char feed becomes finer than nominal.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""increase""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 5.0,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""This can happen when an abnormal control command increases the blower output."",
+      ""effects"": ""Higher gas velocity can change bed behavior and heat transfer.""
+    },
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""decrease""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.0005,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""This can happen when particle attrition creates fine char particles."",
+      ""effects"": ""Fine char particles can increase reaction surface area and influence wall-temperature response.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""increase""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 5.0, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""This can happen when an abnormal control command increases the blower output."", ""effects"": ""Higher gas velocity can change bed behavior and heat transfer.""}, {""answer"": {""component"": ""char particle diameter"", ""trend"": ""decrease""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.0005, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""This can happen when particle attrition creates fine char particles."", ""effects"": ""Fine char particles can increase reaction surface area and influence wall-temperature response.""}]}",2,inlet air velocity;char particle diameter,increase;decrease,bc_v_g(2);d_p0(1),5.0;0.0005,101;202,2.5;0.0005,5.0;0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+qwen_S07_R2,qwen,QWEN_MODEL_TO_FILL,2,0,1,7779,1200,S07,mixed_direction,Deterministic high-air and fine-char mixed-direction case,Air injection is higher than nominal while the char feed becomes finer than nominal.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Air injection is higher than nominal while the char feed becomes finer than nominal.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""increase""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 5.0,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""This can happen when an abnormal control command increases the blower output."",
+      ""effects"": ""Higher gas velocity can change bed behavior and heat transfer.""
+    },
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""decrease""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.0005,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""This can happen when particle attrition creates fine char particles."",
+      ""effects"": ""Fine char particles can increase reaction surface area and influence wall-temperature response.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""increase""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 5.0, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""This can happen when an abnormal control command increases the blower output."", ""effects"": ""Higher gas velocity can change bed behavior and heat transfer.""}, {""answer"": {""component"": ""char particle diameter"", ""trend"": ""decrease""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.0005, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""This can happen when particle attrition creates fine char particles."", ""effects"": ""Fine char particles can increase reaction surface area and influence wall-temperature response.""}]}",2,inlet air velocity;char particle diameter,increase;decrease,bc_v_g(2);d_p0(1),5.0;0.0005,101;202,2.5;0.0005,5.0;0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+qwen_S07_R3,qwen,QWEN_MODEL_TO_FILL,3,0,1,7780,1200,S07,mixed_direction,Deterministic high-air and fine-char mixed-direction case,Air injection is higher than nominal while the char feed becomes finer than nominal.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: Air injection is higher than nominal while the char feed becomes finer than nominal.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""increase""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 5.0,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""This can happen when an abnormal control command increases the blower output."",
+      ""effects"": ""Higher gas velocity can change bed behavior and heat transfer.""
+    },
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""decrease""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.0005,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""This can happen when particle attrition creates fine char particles."",
+      ""effects"": ""Fine char particles can increase reaction surface area and influence wall-temperature response.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""increase""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 5.0, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""This can happen when an abnormal control command increases the blower output."", ""effects"": ""Higher gas velocity can change bed behavior and heat transfer.""}, {""answer"": {""component"": ""char particle diameter"", ""trend"": ""decrease""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.0005, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""This can happen when particle attrition creates fine char particles."", ""effects"": ""Fine char particles can increase reaction surface area and influence wall-temperature response.""}]}",2,inlet air velocity;char particle diameter,increase;decrease,bc_v_g(2);d_p0(1),5.0;0.0005,101;202,2.5;0.0005,5.0;0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+qwen_S08_R1,qwen,QWEN_MODEL_TO_FILL,1,0,1,7778,1200,S08,nominal_no_change,Deterministic nominal no-change case,The combustor remains at the nominal FBC operating condition without an imposed fault.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: The combustor remains at the nominal FBC operating condition without an imposed fault.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""no change""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 3.75,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""No fault mechanism is imposed in this nominal reference case."",
+      ""effects"": ""The nominal case is used as the reference anchor for normal-to-extreme scenario generation.""
+    },
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""no change""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.00125,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""No particle-size abnormality is imposed in this nominal reference case."",
+      ""effects"": ""The nominal particle diameter is kept fixed as part of the reference FBC condition.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""no change""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 3.75, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""No fault mechanism is imposed in this nominal reference case."", ""effects"": ""The nominal case is used as the reference anchor for normal-to-extreme scenario generation.""}, {""answer"": {""component"": ""char particle diameter"", ""trend"": ""no change""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.00125, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""No particle-size abnormality is imposed in this nominal reference case."", ""effects"": ""The nominal particle diameter is kept fixed as part of the reference FBC condition.""}]}",2,inlet air velocity;char particle diameter,no change;no change,bc_v_g(2);d_p0(1),3.75;0.00125,101;202,2.5;0.0005,5.0;0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+qwen_S08_R2,qwen,QWEN_MODEL_TO_FILL,2,0,1,7779,1200,S08,nominal_no_change,Deterministic nominal no-change case,The combustor remains at the nominal FBC operating condition without an imposed fault.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: The combustor remains at the nominal FBC operating condition without an imposed fault.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""no change""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 3.75,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""No fault mechanism is imposed in this nominal reference case."",
+      ""effects"": ""The nominal case is used as the reference anchor for normal-to-extreme scenario generation.""
+    },
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""no change""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.00125,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""No particle-size abnormality is imposed in this nominal reference case."",
+      ""effects"": ""The nominal particle diameter is kept fixed as part of the reference FBC condition.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""no change""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 3.75, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""No fault mechanism is imposed in this nominal reference case."", ""effects"": ""The nominal case is used as the reference anchor for normal-to-extreme scenario generation.""}, {""answer"": {""component"": ""char particle diameter"", ""trend"": ""no change""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.00125, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""No particle-size abnormality is imposed in this nominal reference case."", ""effects"": ""The nominal particle diameter is kept fixed as part of the reference FBC condition.""}]}",2,inlet air velocity;char particle diameter,no change;no change,bc_v_g(2);d_p0(1),3.75;0.00125,101;202,2.5;0.0005,5.0;0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
+qwen_S08_R3,qwen,QWEN_MODEL_TO_FILL,3,0,1,7780,1200,S08,nominal_no_change,Deterministic nominal no-change case,The combustor remains at the nominal FBC operating condition without an imposed fault.,"You must return only valid JSON that follows SITUATION_SCHEMA. Do not add explanations outside JSON. Use exactly the deterministic values, line numbers, keywords, trends, and ranges specified below. The task is model-verification, not free scenario generation.
+
+Situation: The combustor remains at the nominal FBC operating condition without an imposed fault.
+
+Required target JSON content:
+{
+  ""answers"": [
+    {
+      ""answer"": {
+        ""component"": ""inlet air velocity"",
+        ""trend"": ""no change""
+      },
+      ""linenumber"": 101,
+      ""keyword"": ""bc_v_g(2)"",
+      ""value"": 3.75,
+      ""range"": {
+        ""min"": 2.5,
+        ""max"": 5.0,
+        ""constraint keyword"": ""bc_v_g(2)""
+      },
+      ""disasters"": ""No fault mechanism is imposed in this nominal reference case."",
+      ""effects"": ""The nominal case is used as the reference anchor for normal-to-extreme scenario generation.""
+    },
+    {
+      ""answer"": {
+        ""component"": ""char particle diameter"",
+        ""trend"": ""no change""
+      },
+      ""linenumber"": 202,
+      ""keyword"": ""d_p0(1)"",
+      ""value"": 0.00125,
+      ""range"": {
+        ""min"": 0.0005,
+        ""max"": 0.002,
+        ""constraint keyword"": ""d_p0(1)""
+      },
+      ""disasters"": ""No particle-size abnormality is imposed in this nominal reference case."",
+      ""effects"": ""The nominal particle diameter is kept fixed as part of the reference FBC condition.""
+    }
+  ]
+}
+
+Return the same information as a schema-valid JSON object.","{""answers"": [{""answer"": {""component"": ""inlet air velocity"", ""trend"": ""no change""}, ""linenumber"": 101, ""keyword"": ""bc_v_g(2)"", ""value"": 3.75, ""range"": {""min"": 2.5, ""max"": 5.0, ""constraint keyword"": ""bc_v_g(2)""}, ""disasters"": ""No fault mechanism is imposed in this nominal reference case."", ""effects"": ""The nominal case is used as the reference anchor for normal-to-extreme scenario generation.""}, {""answer"": {""component"": ""char particle diameter"", ""trend"": ""no change""}, ""linenumber"": 202, ""keyword"": ""d_p0(1)"", ""value"": 0.00125, ""range"": {""min"": 0.0005, ""max"": 0.002, ""constraint keyword"": ""d_p0(1)""}, ""disasters"": ""No particle-size abnormality is imposed in this nominal reference case."", ""effects"": ""The nominal particle diameter is kept fixed as part of the reference FBC condition.""}]}",2,inlet air velocity;char particle diameter,no change;no change,bc_v_g(2);d_p0(1),3.75;0.00125,101;202,2.5;0.0005,5.0;0.002,,,,,,,,,,Replace model_name and numeric fixtures with actual study settings if needed.
