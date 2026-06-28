@@ -1,0 +1,30 @@
+{
+    "d_p0(1)": {"description": "Char particle diameter",
+                "constraint keywords" : "bc_pic_mi_const_statwt(3,1)", 
+                "min": 1e-4, "max": 1e-2, "distribution": "uniform"},
+    "ro_s0(1)": {"description": "Char particle density"},
+
+    "d_p0(2)": {"description": "Glass bead particle diameter"},
+    "ro_s0(2)": {"description": "Glass bead particle density"},
+
+    "ic_t_g(1)": {"description": "Initial temperature of gas inside the bed, positive value"},
+
+    "ic_t_s(1,1)": {"description": "Initial temperature of char particles inside the bed, positive value"},
+    "ic_t_s(2,2)": {"description": "Initial temperature of glass beads inside the bed, positive value"},
+    "ic_y_s(2)": {"description": "starting point of glass beads inside the bed, smaller than ending point"},
+    "ic_y_n(2)": {"description": "ending point of glass beads inside the bed, larger than starting point"},
+
+    "bc_t_g(2)": {"description": "Temperature of gas at the inlet, positive value"},
+    "bc_v_g(2)": {"description": "Velocity of gas at the inlet, negative value","constraint keywords": "None", "min": -5.0, "max": -0.1, "distribution": "uniform"},
+    "bc_y_g(2,1)": {"description": "Mass fraction of species 1 (O2) at the inlet"},
+    "bc_y_g(2,2)": {"description": "Mass fraction of species 2 (N2) at the inlet"},
+    "bc_y_g(2,5)": {"description": "Mass fraction of species 5 (H2O) at the inlet"},
+
+    "bc_t_s(3,1)": {"description": "temperature of char particles at the inlet, positive value"},
+    "bc_massflow_s(3,1)": {"description": "Mass flow rate of char particles at the inlet, positive value"},
+    "bc_pic_mi_const_statwt(3,1)": {"description": "PIC weight for the char particles. The lower value when d_p0(1) is larger, the higher value when d_p0(1) is smaller. Both of them are very important. Positive integer",
+                                    "constraint keywords": "d_p0(1)", "min": 1, "max": 10},
+
+    "bc_p_g(5)": {"description": "Pressure of gas at the outlet, positive value"}
+
+}
